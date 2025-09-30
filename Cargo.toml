@@ -1,0 +1,10 @@
+[package]
+name = "wscreen"
+version = "0.1.0"
+edition = "2024"
+description = "Window Positioning Helper Structure for the Iced GUI Library"
+license = "MIT"
+repository = "https://github.com/f42h/wscreen"
+
+[target.'cfg(windows)'.dependencies]
+winapi = { version = "0.3", features = ["winuser"] }
